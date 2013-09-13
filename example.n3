@@ -1,0 +1,91 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<location building>
+      a       <http://erlangen-crm.org/current/E55_Type> ;
+      <http://erlangen-crm.org/current/P2i_is_type_of>
+              <Theben &lt;Ägypten&gt;> .
+
+<Malerei auf Stuck>
+      a       <http://erlangen-crm.org/current/E57_Material> ;
+      <http://erlangen-crm.org/current/P45i_is_incorporated_in>
+              <Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> .
+
+<Heidelberger Ramessidenarchiv>
+      a       <http://erlangen-crm.org/current/E30_Right> ;
+      <http://erlangen-crm.org/current/P104i_applies_to>
+              <http://prometheus.uni-koeln.de/pandora/image/show/heidicon_aa-9f1804d75fc9c08abfa74666a32727b00f06004d> .
+
+<Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]>
+      a       <http://erlangen-crm.org/current/E77_Persistent_Item> ;
+      <http://erlangen-crm.org/current/P138i_has_representation>
+              <Image of Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> ;
+      <http://erlangen-crm.org/current/P45_consists_of>
+              <Malerei auf Stuck> ;
+      <http://erlangen-crm.org/current/P53_has_former_or_current_location>
+              <Theben &lt;Ägypten&gt; (Ort/Gebäude)> , <Theben &lt;Ägypten&gt;> ;
+      <http://erlangen-crm.org/current/P92i_was_brought_into_existence_by>
+              _:b1 .
+
+<1246 - 1213 BC>
+      a       <http://erlangen-crm.org/current/E50_Date> ;
+      <http://erlangen-crm.org/current/P78i_identifies>
+              _:b2 .
+
+_:b1  a       <http://erlangen-crm.org/current/E63_Beginning_of_Existence> ;
+      <http://erlangen-crm.org/current/P4_has_time-span>
+              _:b2 ;
+      <http://erlangen-crm.org/current/P92_brought_into_existence>
+              <Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> .
+
+<Theben &lt;Ägypten&gt; (Ort/Gebäude)>
+      a       <http://erlangen-crm.org/current/E53_Place> ;
+      <http://erlangen-crm.org/current/P2_has_type>
+              <location> ;
+      <http://erlangen-crm.org/current/P53i_is_former_or_current_location_of>
+              <Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> .
+
+<Image of Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]>
+      a       <http://erlangen-crm.org/current/E38_Image> ;
+      <http://erlangen-crm.org/current/P128i_is_carried_by>
+              <http://prometheus.uni-koeln.de/pandora/image/show/heidicon_aa-9f1804d75fc9c08abfa74666a32727b00f06004d> ;
+      <http://erlangen-crm.org/current/P138_represents>
+              <Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> ;
+      <http://erlangen-crm.org/current/P3_has_note>
+              """Description: Opfer vor Grabherr und Gemahlin: vegetabile Opfergaben in einem Kelch.
+Porter-Moss I.1 TT138(6).
+Grabpublikation: Erika Feucht, Die Gräber des Nedjemger (TT 138) und des Hori (TT 259), THEBEN XV, Mainz 2006.""" .
+
+_:b2  a       <http://erlangen-crm.org/current/E52_Time-Span> ;
+      <http://erlangen-crm.org/current/P4i_is_time-span_of>
+              _:b1 ;
+      <http://erlangen-crm.org/current/P78_is_identified_by>
+              <1246 - 1213 BC> , <Neues Reich, 19. Dyn., Ramses II., zweite Hälfte> .
+
+<Theben &lt;Ägypten&gt;>
+      a       <http://erlangen-crm.org/current/E53_Place> ;
+      <http://erlangen-crm.org/current/P2_has_type>
+              <location building> ;
+      <http://erlangen-crm.org/current/P53i_is_former_or_current_location_of>
+              <Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> .
+
+<Neues Reich, 19. Dyn., Ramses II., zweite Hälfte>
+      a       <http://erlangen-crm.org/current/E49_Time_Appellation> ;
+      <http://erlangen-crm.org/current/P78i_identifies>
+              _:b2 .
+
+<location>
+      a       <http://erlangen-crm.org/current/E55_Type> ;
+      <http://erlangen-crm.org/current/P2i_is_type_of>
+              <Theben &lt;Ägypten&gt; (Ort/Gebäude)> .
+
+<http://prometheus.uni-koeln.de/pandora/image/show/heidicon_aa-9f1804d75fc9c08abfa74666a32727b00f06004d>
+      a       <http://erlangen-crm.org/current/E84_Information_Carrier> ;
+      <http://erlangen-crm.org/current/P104_is_subject_to>
+              <Heidelberger Ramessidenarchiv> ;
+      <http://erlangen-crm.org/current/P128_carries>
+              <Image of Grab des Nedjemger, TT138 [Detail: Querhalle, Westwand, Nordteil]> ;
+      <http://erlangen-crm.org/current/P3_has_note>
+              "Database: HeidICON - Ägyptologie Archiv, Ruprecht-Karls-Universität Heidelberg, Universitätsbibliothek, Ruprecht-Karls-Universität Heidelberg" .
